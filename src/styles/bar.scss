@@ -1,5 +1,5 @@
 $font-stack: Helvetica, sans-serif;
-$red: #ff0000;
+$red: black;
 $primary-color: $red;
 
 body {
@@ -9,7 +9,35 @@ body {
   justify-content: center;
 }
 
-// bar.scss
+.wishlist-item a {
+  text-decoration: none;
+}
+
+/* Style for the wishlist button */
+.wishlist-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 6px 12px;
+  margin-left: 8px;
+  /* Adjust spacing as needed */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+
+.wishlist-item {
+  color: red;
+}
+
+.wishlist {
+  color: red;
+}
+
 
 // Styles for the search bar container
 .search-bar {
@@ -19,9 +47,9 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 8px;
-  width: 500px; 
+  width: 500px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; 
+  position: relative;
 
   input[type="text"] {
     border: none;
